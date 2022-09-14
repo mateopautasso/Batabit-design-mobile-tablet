@@ -1,0 +1,2 @@
+-Responsive Design con breakpoints aplicados en diferentes hojas de estilo y a su vez algunos media queries en la hoja de estilos principales.
+-Aplicación de metodología BEM.
