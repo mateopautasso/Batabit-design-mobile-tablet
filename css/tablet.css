@@ -1,0 +1,32 @@
+.exchange-section__section-table {
+    margin: 3rem;
+}
+.exchange-section__container {
+    justify-content: center;
+}
+.plans-section__cards-container {
+    justify-content: center;
+}
+.plans-section__card {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.cards-section__main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 920px;
+}
+
+
+footer {
+    justify-content: space-evenly;
+}
+.footer__ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

@@ -1,0 +1,22 @@
+.exchange-section__section-table {
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+.exchange-section__container {
+    justify-content: center;
+}
+.plans-section__cards-container {
+    justify-content: center;
+}
+
+.footer {
+    height: 100px;
+    justify-content: space-between;
+}
+.footer__ul {
+    gap: 40px;
+    margin-left: 70px;
+}
+.footer__img-container {
+    margin-right: 70px;
+}
