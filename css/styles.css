@@ -46,6 +46,10 @@ header {
     background: var(--linear-BG);
 }
 
+section {
+    scroll-behavior: inherit;
+}
+
 header h1 {
     color: var(--Just-white);
 }
@@ -99,6 +103,7 @@ header img {
 main {
     width: 100%;
     height: auto;
+    scroll-behavior: inherit;
 }
 
 /* exchange section */
@@ -150,12 +155,14 @@ main {
     justify-content: space-between;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 .exchange-section__section-table {
+    position: relative;
     width: 200px;
     height: auto;
-    margin: 0 60px;
+    margin: 0 10rem;
     display: flex;
     flex-direction: column;
     scroll-snap-align: center;
@@ -384,6 +391,8 @@ main {
     font-weight: 500;
     text-align: center;
 }
+
+
 .plans-section__cards-container {
     display: flex;
     justify-content: space-between;
@@ -393,14 +402,15 @@ main {
     margin: 0px 0px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .plans-section__card {
     width: 200px;
     height: 300px;
     padding: 3rem 1.2rem;
-    margin: 0 3rem;
+    margin: 0 10rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -408,15 +418,15 @@ main {
     align-items: center;
     gap: 16px;
     border-radius: var(--general-border-radius);
-    scroll-snap-align: center;
     background-color: var(--Just-white);
     box-shadow: 0px 0px 8px rgba(89, 73, 30, 0.16);
+    scroll-snap-align: center;
 }
 .plans-section__card--left {
-    margin-left: 6rem;
+    margin-left: 20rem;
 }
 .plans-section__card--right {
-    margin-right: 6rem;
+    margin-right: 20rem;
 }
 
 .card__plan-recomendado {
@@ -487,6 +497,20 @@ main {
     margin-left: 8px;
 }
 
+.card__a {
+    position: absolute;
+    top: 50%;
+    width: 8px;
+    height: 12px;
+}
+.card__a--right {
+    right: -35px;
+}
+.card__a--left {
+    left: -35px;
+    transform: rotate(180deg);
+}
+
 
 
 /* footer styles */
@@ -519,18 +543,30 @@ footer {
     font-size: 1.5rem;
 }
 
+
 @media screen and (min-width: 429px){
     .exchange-section__section-table {
         margin-left: 12.5rem;
         margin-right: 12.5rem;
     }
+    .plans-section__card {
+        margin: 0 13rem;
+    }
+    .plans-section__card--left {
+        margin-left: 26rem;
+    }
+    .plans-section__card--right {
+        margin-right: 26rem;
+    }
 }
+
 @media screen and (min-width: 475px){
     .exchange-section__section-table {
         margin-left: 15rem;
         margin-right: 15rem;
     }
 }
+
 @media screen and (min-width: 500px){
     .exchange-section__section-table {
         margin: 1.5rem;
@@ -541,7 +577,11 @@ footer {
     .exchange-section__container {
         overflow-x: unset;
     }
+    .exchange-section__arrow {
+        display: none;
+    }
 }
+
 @media screen and (min-width: 600px){
     .plans-section__card {
         margin: 0 0.3rem;
@@ -554,5 +594,8 @@ footer {
     }
     .plans-section__cards-container {
         overflow-x: unset;
+    }
+    .card__a {
+        display: none;
     }
 }

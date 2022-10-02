@@ -32,7 +32,10 @@
             </div>
 
             <div class="exchange-section__container">
-                <section class="exchange-section__section-table exchange-section__section-table--left">
+                <section class="exchange-section__section-table exchange-section__section-table--left" id="card-monedas">
+                    <a href="#card-comisiones" class="exchange-section__arrow card__a card__a--right">
+                        <img src="Assets/icons/right-arrow.svg" alt="">
+                    </a>
                     <div class="exchange-section__table table">
                         <div class="table__container">
                             <div class="table__a-title-container">
@@ -73,7 +76,10 @@
                         </div>
                     </div>
                 </section>
-                <section class="exchange-section__section-table exchange-section__section-table--right">
+                <section class="exchange-section__section-table exchange-section__section-table--right" id="card-comisiones">
+                    <a href="#card-monedas" class="exchange-section__arrow card__a card__a--left">
+                        <img src="Assets/icons/right-arrow.svg" alt="">
+                    </a>
                     <div class="exchange-section__table table">
                         <div class="table__container">
                             <div class="table__a-title-container">
@@ -166,7 +172,20 @@
             </div>
             <div class="plans-section__cards-container">
 
-                <div class="plans-section__card plans-section__card--left card">
+                <div class="plans-section__card card plans-section__card--left" id="plan-mensual">
+                    <p class="card__p--tipo-de-pago">Pago Mensual</p>
+                    <div class="card__container-price">
+                        <p class="card__dollar">$</p>
+                        <p class="card__p--price">19</p>
+                    </div>
+                    <p class="card__p--beneficio">*Puedes cancelar la subscripción en cualquier momento.</p>
+                    <button class="card__button">Escoger este<span></span></button>
+                    <a href="#plan-anual" class="card__a card__a--right">
+                        <img src="Assets/icons/right-arrow.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="plans-section__card card" id="plan-anual">
                     <p class="card__plan-recomendado">Recomendado</p>
                     <p class="card__p--tipo-de-pago">Pago Anual</p>
                     <div class="card__container-price">
@@ -175,19 +194,15 @@
                     </div>
                     <p class="card__p--beneficio">*Ahorras $129 comparado al plan mensual.</p>
                     <button class="card__button">Escoger este<span></span></button>
+                    <a href="#plan-mensual" class="card__a card__a--left">
+                        <img src="Assets/icons/right-arrow.svg" alt="">
+                    </a>
+                    <a href="#plan-trimestral" class="card__a card__a--right">
+                        <img src="Assets/icons/right-arrow.svg" alt="">
+                    </a>
                 </div>
 
-                <div class="plans-section__card card">
-                    <p class="card__p--tipo-de-pago">Pago Mensual</p>
-                    <div class="card__container-price">
-                        <p class="card__dollar">$</p>
-                        <p class="card__p--price">19</p>
-                    </div>
-                    <p class="card__p--beneficio">*Puedes cancelar la subscripción en cualquier momento.</p>
-                    <button class="card__button">Escoger este<span></span></button>
-                </div>
-
-                <div class="plans-section__card plans-section__card--right card">
+                <div class="plans-section__card plans-section__card--right card" id="plan-trimestral">
                     <p class="card__p--tipo-de-pago">Pago Trimestral</p>
                     <div class="card__container-price">
                         <p class="card__dollar">$</p>
@@ -195,6 +210,9 @@
                     </div>
                     <p class="card__p--beneficio">*Ahorras $68 comparado al plan mensual.</p>
                     <button class="card__button">Escoger este<span></span></button>
+                    <a href="#plan-anual" class="card__a card__a--left">
+                        <img src="Assets/icons/right-arrow.svg" alt="">
+                    </a>
                 </div>
                 
             </div>
